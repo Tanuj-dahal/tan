@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajamati Studios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ADD8E6, #DDA0DD);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .header {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            padding-left: 0;
+        }
+        .image-text-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 15px;
+        }
+        .studio-text {
+            color: #6b8e23;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .rajamati-text {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            position: absolute;
+            top: 50%;
+            right: -150px; /* Adjusted to move buttons slightly to the left */
+            transform: translateY(-50%);
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #4CAF50;
+            border: 2px solid black;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Added transition for hover effects */
+        }
+        .button:hover {
+            background-color: #45a049;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transform: scale(1.1); /* Slightly enlarges the button on hover */
+        }
+        .centered-text {
+            position: absolute;
+            top: 55%;
+            left: 40%;
+            transform: translate(-40%, -50%);
+            font-size: 72px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            z-index: -1;
+            font-family: 'Playfair Display', serif;
+        }
+        .icon {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: middle;
+            width: 120px;
+            height: auto;
+        }
+        .arrow-button-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .arrow {
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 20px solid #333;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="image-text-wrapper">
+            <img src="B.png" alt="Image" width="120">
+            <div class="text-wrapper">
+                <p class="rajamati-text">Rajamati</p>
+                <p class="studio-text">Studios</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="About us.html" class="button">About Us</a>
+            <a href="Contacts.html" class="button">Contacts</a>
+            <a href="Meet the Team.html" class="button">Meet the Team</a>
+        </div>
+    </div>
+    <div class="centered-text">
+        <img src="C.png" alt="Icon" class="icon" width="250">
+        Created to Create
+    </div>
+    <div class="arrow-button-container">
+        <div class="arrow"></div>
+        <a href="Projects.html" class="button">Our Projects</a>
+    </div>
+</body>
+</html>
