@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #004080, #7b68ee); /* Medium dark blue to light purple gradient */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+            position: relative; /* For absolute positioning of the arrow */
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white; /* White background for the content area */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 800px; /* Max width for the content area */
+            width: 100%;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333; /* Dark text color */
+        }
+        .content {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666; /* Lighter text color */
+        }
+        .arrow-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .arrow {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 20px solid black; /* Black arrow color facing left */
+        }
+        .arrow-link a {
+            text-decoration: none;
+            color: black; /* Black arrow link text color */
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 15px; /* Adjusted space between the arrow and the link text */
+        }
+        .arrow-link a:hover {
+            color: #007bff; /* Change text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="arrow-link">
+        <div class="arrow"></div>
+        <a href="Rajamati studios.html" target="_blank">Back</a>
+    </div>
+    <div class="container">
+        <h1 class="title">About Us</h1>
+        <p class="content">
+            Welcome to Rajamati Studios, where high school students bring their passion for music to life. Our studio is dedicated to fostering creativity and skill in a collaborative environment. Join us as we create, record, and celebrate music made by the next generation of artists.
+        </p>
+    </div>
+</body>
+</html>
